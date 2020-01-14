@@ -40,7 +40,7 @@ void threadManager (void) {
 }
 
 void myTimer0Handler (void) {
-    if (cnt == 5) cnt = 0;
+    if (cnt == 10) cnt = 0;
     else cnt ++;
     if (cnt == 0) time ++;
     SAVESTATE;

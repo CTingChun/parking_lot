@@ -133,17 +133,6 @@ void Consumer( void ) {
 void main( void ) {
     create = 6;
     tag = total = 0;
-    // for (create = 6; create > 0; create --) {
-    //     while (total == 2) {}
-    //     if(create == 6) ThreadCreate(&Producer1);
-    //     else if(create == 5) ThreadCreate(&Producer2);
-    //     else if(create == 4) ThreadCreate(&Producer3);
-    //     else if(create == 3) ThreadCreate(&Producer4);
-    //     else if(create == 2) ThreadCreate(&Producer5);
-    //     else if(create == 1) ThreadCreate(&Consumer);
-    //     total ++;
-    //     ThreadYield();
-    // }
     while (create > 0) {
         while (total == 2) {}
         if(tag == 0) ThreadCreate(&Producer1);
