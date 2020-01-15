@@ -122,6 +122,21 @@ void Consumer( void ) {
         SBUF = ' ';
         while (!TI) {}
         TI = 0;
+        SBUF = 'u';
+        while (!TI) {}
+        TI = 0;
+        SBUF = 'n';
+        while (!TI) {}
+        TI = 0;
+        SBUF = 'i';
+        while (!TI) {}
+        TI = 0;
+        SBUF = 't';
+        while (!TI) {}
+        TI = 0;
+        SBUF = ' ';
+        while (!TI) {}
+        TI = 0;
         SBUF = '0' + (buffer[j]);
         while (!TI) {}
         TI = 0;
