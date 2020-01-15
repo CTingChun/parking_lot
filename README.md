@@ -26,4 +26,6 @@ There will be less hints for this CheckPoint.
 
 ## Report below here
 ### Screenchot
-<img src="ppc5.png" width="313" height="119px"></img>
+<img src="ppc5.png" width="392" height="136px"></img>
+### Data Memory
+<img src="ppc5_mem.png" width="392" height="36px"></img>
