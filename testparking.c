@@ -56,7 +56,7 @@ void Consumer( void ) {
         while (!TI) {}
         TI = 0;
         SBUF = ' ';
-        while (!TI) {}
+        while (!TI) { }
         TI = 0;
         if (j % 2 == 1) {
             SBUF = 'l';
@@ -122,21 +122,6 @@ void Consumer( void ) {
         SBUF = ' ';
         while (!TI) {}
         TI = 0;
-        SBUF = 'u';
-        while (!TI) {}
-        TI = 0;
-        SBUF = 'n';
-        while (!TI) {}
-        TI = 0;
-        SBUF = 'i';
-        while (!TI) {}
-        TI = 0;
-        SBUF = 't';
-        while (!TI) {}
-        TI = 0;
-        SBUF = ' ';
-        while (!TI) {}
-        TI = 0;
         SBUF = '0' + (buffer[j]);
         while (!TI) {}
         TI = 0;
@@ -161,6 +146,7 @@ void main( void ) {
         total ++;
         ThreadYield();
     }
+    for (;;) {}
 }
 
 void _sdcc_gsinit_startup( void ) {

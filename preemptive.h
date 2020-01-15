@@ -1,13 +1,3 @@
-/*
- * file: preemptive.h
- *
- * this is the include file for the preemptive multithreading
- * package.  It is to be compiled by SDCC and targets the EdSim51 as
- * the target architecture.
- *
- * CS 3423 Fall 2018
- */
-
 #ifndef __PREEMPTIVE_H__
 #define __PREEMPTIVE_H__
 
@@ -21,7 +11,7 @@ __idata __at (0x23) char threadBitmap[MAXTHREADS]; // 23-27
 __idata __at (0x28) char ID;
 __idata __at (0x29) char tmp;
 __idata __at (0x2A) char i;
-__idata __at (0x2B) char currentID;
+__idata __at (0x2B) char tmp2;
 __idata __at (0x2C) char managerID;
 __idata __at (0x35) char tag;
 __idata __at (0x36) char j;

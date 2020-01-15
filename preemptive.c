@@ -40,16 +40,16 @@ void threadManager (void) {
 }
 
 void myTimer0Handler (void) {
-    if (cnt == 10) cnt = 0;
+    if (cnt == 3) cnt = 0;
     else cnt ++;
     if (cnt == 0) time ++;
     SAVESTATE;
-    currentID = cnt;
+    tmp2 = cnt;
     tmp = ID;
     ID = managerID;
     RESTORESTATE;
     ID = tmp;
-    cnt = currentID;
+    cnt = tmp2;
 }
 
 void Bootstrap( void ) {
@@ -85,9 +85,9 @@ ThreadID ThreadCreate(FunctionPtr fp) {
         push a
         push a
     __endasm;
-    currentID = i<<3;
+    tmp2 = i<<3;
     __asm
-        push _currentID
+        push _tmp2
     __endasm;
     savedSP[i] = SP;
     SP = tmp;
